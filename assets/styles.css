@@ -1,0 +1,51 @@
+body{
+    background: url('./images/background2.avif');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+header>h1{
+    font-family: 'Splash', cursive;
+}
+#main{
+    background-color:rgba(198, 91, 52, 0.713);
+    width: 50%;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 15%;
+}
+
+label{
+    font-size: 20px;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+    letter-spacing: 4px;
+}
+#total{
+    margin: 20px;
+}
+input{
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    
+}
+#tip>span{
+    font-size: 20px;
+}
+#submit{
+    margin-top: 30px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#submit:hover{
+    background-color: rgba(255, 68, 0, 0.764);
+}
+#people>h3{
+    font-family: 'Khand', sans-serif;
+    letter-spacing: 3px;
+    
+}
