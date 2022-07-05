@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Split Bill</title>
+</head>
+<body>
+    <main id="main">
+        <header>
+            <h1>POCKET FRIENDLY</h1>
+        </header>
+        <form action="" id="form">
+            <section id="total">
+                <label for="total-bill">Total Amount </label><br>
+                <input type="number" id="total-bill" name="total-bill" required placeholder="enter amount" >
+            </section>
+            <section id="tip">
+                <label for="tip-percent"> Tip percentage</label><br>
+                <input type="number" id="tip-percent" name="tip-percent" required  placeholder="enter amount" > <span>%</span>
+                <!-- <select name="percentage" id="percentage">
+                    <option value="10" >10 percent</option>
+                    <option value="20">20 percent</option>
+                    <option value="30">30 percent</option>
+                    <option value="40">40 percent</option>
+                    <option value="50" selected>50 percent</option>
+                    <option value="60">60 percent</option>
+                    <option value="70">70 percent</option>
+                    <option value="80">80 percent</option>
+                    <option value="90">90 percent</option>
+                    <option value="100">100 percent</option>
+
+                </select> -->
+           
+            </section>
+            <section id="people">
+                <h3>Number of People</h3>
+                <span>&#128101;</span>
+            </section>
+            <section id="submission">
+                <input type="submit" id="submit">
+            </section>
+        </form>
+        
+        <summary>
+            <h4>TOTAL BILL <span>--</span></h4>
+            <h4>BILL PER PERSON <span>--</span></h4>
+            <h4>TOTAL TIP <span>--</span></h4>
+            <h4>TIP PER PERSON <span>--</span></h4>
+        </summary>
+    </main>
+    <script src="./src/script.js"></script>
+</body>
+</html>
