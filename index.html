@@ -21,10 +21,16 @@
             <section id="total">
                 <label for="total-bill">Total Amount </label><br>
                 <input type="number" id="total-bill" name="total-bill" required placeholder="enter amount" >
+                <select name="currency" id="currency">
+                    <option value="shilling">KSH</option>
+                    <option value="dollar">USD</option>
+                    <option value="euro">EUR</option>
+                    <option value="pound">GBP</option>
+                </select>
             </section>
             <section id="tip">
                 <label for="tip-percent"> Tip percentage</label><br>
-                <input type="number" id="tip-percent" name="tip-percent" required  placeholder="enter amount" > <span>%</span>
+                <input type="number" id="tip-percent" name="tip-percent" required  placeholder="enter percentage" > <span>%</span>
                 <!-- <select name="percentage" id="percentage">
                     <option value="10" >10 percent</option>
                     <option value="20">20 percent</option>
@@ -41,7 +47,8 @@
            
             </section>
             <section id="people">
-                <h3>Number of People</h3>
+                <label for="people">Number of people</label><br>
+                <input type="number" id="people-count" name="people-count" required placeholder="enter number of people" >
                 <span>&#128101;</span>
             </section>
             <section id="submission">
@@ -50,10 +57,9 @@
         </form>
         
         <summary>
-            <h4>TOTAL BILL <span>--</span></h4>
-            <h4>BILL PER PERSON <span>--</span></h4>
-            <h4>TOTAL TIP <span>--</span></h4>
-            <h4>TIP PER PERSON <span>--</span></h4>
+            <h4 >TOTAL BILL <span id="bill-text">--</span></h4>
+            <h4 >TOTAL TIP <span id="tip-text">--</span></h4>
+            <h4>BILL PER PERSON <span id="bill-individual">--</span></h4>
         </summary>
     </main>
     <script src="./src/script.js"></script>
